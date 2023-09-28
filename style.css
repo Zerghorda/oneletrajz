@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;  
+}
+main {
+    background-color: var(--main);
+    }
+.light-theme {
+--main: #fff4d6;
+    }
+.dark-theme{
+    --main: #000000
+}
+.myImage{
+    border-radius: 75%;
+}
