@@ -1,7 +1,7 @@
-class onelet{
-constructor(){
-    const Header = $("header");
-    const ARTICLE = $("article");
-    HEADER.append('<dic class="myImage"><img src="kepek/..."></div>')
-}
-}
+$(function () {
+  const ARTICLE = $("article");
+  function sotet() {
+    document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("light-theme");
+  }
+});

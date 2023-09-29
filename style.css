@@ -1,18 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Poppins', sans-serif;
-    box-sizing: border-box;  
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 main {
-    background-color: var(--main);
-    }
+  display: flex;
+  grid-template-columns:  auto auto auto;
+  border: #000000 solid 5px;
+  background-color: var(--main);
+}
+aside{
+border: #000000 solid;
+}
+header{
+  display: flex;
+align-self:center;
+  border: green solid;
+}
+#headicons{
+  display: flex;
+  flex-direction: row;
+}
+header .download{
+align-self: start;
+}
+header .darkLight{
+  align-self: flex-end;
+}
+header img{
+  border-radius: 50%;
+}
+article{
+  flex: auto;
+
+}
 .light-theme {
---main: #fff4d6;
-    }
-.dark-theme{
-    --main: #000000
+  --main: #fff4d6;
 }
-.myImage{
-    border-radius: 75%;
+.dark-theme {
+  --main: #000000;
 }
+.myImage {
+  border-radius: 75%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 50%;
+  text-align: center;
+}
+.contacts{border: yellow solid;}
+.social{border: blue solid;}
+.profil{border: red solid;}
+.educations{border: pink solid;}
+.skills{border: green solid;}
+.experience{border: green solid;}
+.cerfiticates{border: green solid;}
+.languages{border: green solid;}
+.intrests{border: green solid;}
+
