@@ -6,34 +6,45 @@
 }
 main {
   display: flex;
-  grid-template-columns:  auto auto auto;
+  grid-template-columns: auto auto auto;
   border: #000000 solid 5px;
   background-color: var(--main);
 }
-aside{
-border: #000000 solid;
+aside {
+  border: #000000 solid;
 }
-header{
+header {
+  width: 100%;
   display: flex;
-align-self:center;
+  align-self: center;
   border: green solid;
+  display: flex;
 }
-#headicons{
+#headicons {
+  padding: 10x 10%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
 }
-header .download{
-align-self: start;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-header .darkLight{
+header .download {
+  align-self: start;
+}
+header .darkLight {
   align-self: flex-end;
 }
-header img{
+header img {
   border-radius: 50%;
 }
-article{
+article {
   flex: auto;
-
 }
 .light-theme {
   --main: #fff4d6;
@@ -50,13 +61,30 @@ footer {
   right: 50%;
   text-align: center;
 }
-.contacts{border: yellow solid;}
-.social{border: blue solid;}
-.profil{border: red solid;}
-.educations{border: pink solid;}
-.skills{border: green solid;}
-.experience{border: green solid;}
-.cerfiticates{border: green solid;}
-.languages{border: green solid;}
-.intrests{border: green solid;}
-
+.contacts {
+  border: yellow solid;
+}
+.social {
+  border: blue solid;
+}
+.profil {
+  border: red solid;
+}
+.educations {
+  border: pink solid;
+}
+.skills {
+  border: green solid;
+}
+.experience {
+  border: green solid;
+}
+.cerfiticates {
+  border: green solid;
+}
+.languages {
+  border: green solid;
+}
+.intrests {
+  border: green solid;
+}
