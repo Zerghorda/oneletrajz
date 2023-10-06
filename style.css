@@ -6,34 +6,71 @@
 }
 main {
   display: flex;
-  grid-template-columns:  auto auto auto;
   border: #000000 solid 5px;
   background-color: var(--main);
 }
-aside{
-border: #000000 solid;
+aside {
+  border: #000000 solid;
+  flex: 0 0 25%;
 }
-header{
+header {
   display: flex;
-align-self:center;
-  border: green solid;
+  flex-direction: column;
+  align-self: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
-#headicons{
+.myImage {
+  text-align: center;
+}
+#head {
+  margin: 10px;
+}
+#cimek {
+  text-align: center;
+  font-size: 10px;
+}
+#cimek h1 {
+  font-size: 20px;
+}
+#icons {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-header .download{
-align-self: start;
+header .download i ::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(0, 0, 0) ;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
-header .darkLight{
-  align-self: flex-end;
+header .download i:hover::after{
+  width: 100%;
 }
-header img{
+
+header .darkLight i ::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(0, 0, 0) ;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+header .darkLight i:hover::after{
+  width: 100%;
+}
+
+header img {
   border-radius: 50%;
 }
-article{
-  flex: auto;
-
+article {
+  flex: 0 0 75%;
 }
 .light-theme {
   --main: #fff4d6;
@@ -50,13 +87,107 @@ footer {
   right: 50%;
   text-align: center;
 }
-.contacts{border: yellow solid;}
-.social{border: blue solid;}
-.profil{border: red solid;}
-.educations{border: pink solid;}
-.skills{border: green solid;}
-.experience{border: green solid;}
-.cerfiticates{border: green solid;}
-.languages{border: green solid;}
-.intrests{border: green solid;}
+.contacts {
+  padding: 10px;
+}
+.info {
+  padding: 10px;
+}
+.social {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.profil {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.profil h1 {
+  text-align: center;
+}
+.profil p {
+  margin-top: 20px;
+  text-justify: auto;
+}
+.educations {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.educations h1 {
+  text-align: center;
+}
+.educations dl {
+  padding: 10px;
+  text-align: justify;
+  border-left: solid black;
+}
+.educations dl dt {
+  font-weight: bold;
+  margin: 20px;
+}
+.educations dl dd {
+  padding-left: 10px;
+  margin: 15px;
+}
+.date {
+  color: rgb(2, 128, 128);
+  margin: 15px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.skills h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  flex: 0 0 100%;
+}
+.skills .list {
+  flex: 0 0 50%;
+}
+.skills ul {
+  list-style: circle;
+  margin: 15px;
+}
+.skills ul li {
+  margin: 10px;
+}
 
+.experience {
+  margin-bottom: 20px;
+}
+.experience p{
+  padding: 10px;
+}
+.cerfiticates {
+  margin-bottom: 20px;
+}
+.cerfiticates p{
+  padding: 10px;
+}
+.languages {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.languages h2 {
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+}
+.languages ul {
+  margin: 15px;
+  padding: 10px;
+  flex: 0 0 50%;
+}
+.intrests h2 {
+  margin-bottom: 20px;
+}
+.intrests dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dlList {
+  padding: 20px;
+  flex-basis: 50%;
+}
